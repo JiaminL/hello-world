@@ -1,4 +1,4 @@
-```Verilog
+```java
 module add_two_values_task(
     input[3:0] ain, bin,
     output reg cout,
