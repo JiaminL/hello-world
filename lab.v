@@ -1,4 +1,4 @@
-、、、Verilog
+```Verilog
 module add_two_values_task(
     input[3:0] ain, bin,
     output reg cout,
@@ -32,4 +32,4 @@ module add_two_values_task(
     always @(ain,bin)
         add_two_values(ain,bin,sum,cout);
 endmodule
-、、、
+```
