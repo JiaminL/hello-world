@@ -29,7 +29,6 @@ module lab6_2_2(
     output [7:0] Q
     );
     wire[6:0] l;
-    
         T_FF_useD_dataflow T0 (Enable,Clk,Clear_n,Q[0]);
         assign l[0]=Q[0]&Enable;
         T_FF_useD_dataflow T1 (l[0],Clk,Clear_n,Q[1]);
@@ -45,5 +44,4 @@ module lab6_2_2(
         T_FF_useD_dataflow T6 (l[5],Clk,Clear_n,Q[6]);
         assign l[6]=Q[6]&l[5];
         T_FF_useD_dataflow T7 (l[6],Clk,Clear_n,Q[7]);
-
 endmodule
