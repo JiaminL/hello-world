@@ -27,7 +27,7 @@ module lab6_1_1_tb;
     reg [3:0] D;
     wire [3:0] Q;
     
-    lab6_1_1 DUL ( .Clk(Clk), .D(D), .reset(reset), .load(load), .Q(Q));
+    lab6_1_1 DUT ( .Clk(Clk), .D(D), .reset(reset), .load(load), .Q(Q));
     
     initial
         #300 $finish;
